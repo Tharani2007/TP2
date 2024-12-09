@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Société de la Malveillance</title>
+  </head>
+  <body>
+    <nav>
+      <img src="images/Untitled154_20241202044102.jpg" alt="logo" />
+      <a href="#accueil">Accueil</a>
+      <a href="#inscription">Inscription</a>
+      <a href="#articles">Articles</a>
+      <a href="#tableau">Tableau</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#video">Vidéo</a>
+      <a href="#pied">Pied de Page</a>
+    </nav>
+
+    <div id="accueil">
+      <div id="texteacc">
+        <h2>TP2 - Automne 2024</h2>
+        <h1>La Société de la Malveillance</h1>
+        <h3>Tharanigan Ponniah</h3>
+        <p>Techniques d'intégration multimédia</p>
+        <p>Collège de Maisonneuve</p>
+        <a href="https://github.com/Tharani2007/TP2" target="_blank"
+          >https://github.com/Tharani2007/TP2</a>
+      </div>
+      <img src="images/sukuna-ryomen-sukuna-removebg-preview.png" alt="" />
+    </div>
+
+    <div id="inscription">
+      <h1>Formulaire d'inscription à notre Société</h1>
+      <form action="sukuna.php" method="POST">
+        <label class="sous-titre-inscription" for="nom">Nom :</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Votre nom complet"
+          required
+        /><br />
+
+        <label class="sous-titre-inscription" for="age">Âge :</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          placeholder="Votre âge"
+          min="1"
+          required
+        /><br />
+
+        <p>Clan :</p>
+        <input type="radio" id="gojo" name="clan" value="Gojo" required />
+        <label for="gojo">Gojo</label><br />
+
+        <input type="radio" id="zenin" name="clan" value="Zenin" required />
+        <label for="zenin">Zenin</label><br />
+
+        <input type="radio" id="kamo" name="clan" value="Kamo" required />
+        <label for="kamo">Kamo</label><br />
+
+        <input type="radio" id="inumaki" name="clan" value="Inumaki" required />
+        <label for="inumaki">Inumaki</label><br />
+
+        <input
+          type="radio"
+          id="fujiwara"
+          name="clan"
+          value="Fujiwara"
+          required
+        />
+        <label for="fujiwara">Fujiwara</label><br />
+
+        <input type="radio" id="abe" name="clan" value="Abe" required />
+        <label for="abe">Abe</label><br />
+
+        <label class="sous-titre-inscription" for="genre">Genre :</label>
+        <select id="genre" name="genre" required>
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option>
+          <option value="autre">Autre</option>
+          <option value="prefere_pas_dire">Préfère ne pas dire</option></select
+        ><br />
+
+        <label class="sous-titre-inscription" for="raison"
+          >Pourquoi souhaitez-vous rejoindre notre culte ?</label
+        >
+        <textarea
+          id="raison"
+          name="raison"
+          rows="5"
+          cols="40"
+          placeholder="Expliquez votre motivation"
+          required
+        ></textarea
+        ><br />
+
+        <input type="submit" id="btn_submit" value="S'inscrire" />
+      </form>
+    </div>
+
+    <div id="articles">
+      <h2>Informations de Ryomen Sukuna</h2>
+      <div id="main-content">
+        <div id="sukunayap">
+          <img
+            src="images/sukuna-really-got-one-of-the-best-covers-in-jjk-v0-3qjf0umqzm6c1.webp"
+            alt="Sukuna"
+          />
+          <p><strong>Nom :</strong> Ryomen Sukuna</p>
+          <p><strong>Alias :</strong> Roi des Fléaux, Le plus Puissant</p>
+          <p>
+            <strong>Espèce :</strong> Esprit Maudit / Sorcier Humain
+            (anciennement)
+          </p>
+          <p><strong>Âge :</strong> 1000+</p>
+          <p><strong>Genre :</strong> Masculin</p>
+          <p><strong>Statut :</strong> Esprit Maudit</p>
+        </div>
+    
+        <!-- Side sections -->
+        <div id="side-sections">
+          <div id="apparence">
+            <h2>Apparence</h2>
+            <p>
+              Sukuna est un personnage imposant, grand et musclé, doté de quatre
+              bras, quatre yeux et une bouche géante qui se trouve sur son ventre.
+              Ses cheveux sont courts et d'un rose-rouge vif, tandis que ses yeux
+              sont d'un rouge intense. Lorsqu'il prend le contrôle de quelqu'un, des
+              tatouages noirs apparaissent sur son corps, notamment sur ses bras,
+              poignets, abdomen et visage. Ces marques sont le signe de sa
+              domination. Il porte généralement uniquement un pantalon, car son
+              apparence unique l'empêche de porter des vêtements conventionnels pour
+              le haut du corps.
+            </p>
+          </div>
+          <div id="personnalite">
+            <h2>Personnalité</h2>
+            <p>
+              Sukuna est un personnage égoïste, narcissique et sadique, qui ne se
+              soucie ni des conséquences de ses actions ni de son hôte. Il prend
+              plaisir à massacrer et à prolonger ses combats, minimisant souvent ses
+              adversaires. Il est intelligent, manipulateur et arrogant, et
+              considère les humains comme faibles. Bien qu'il se moque de Yuji, il
+              reconnaît la force lorsqu'il la voit, comme avec Jogo. Indifférent à
+              la technologie et à la nourriture, il se concentre uniquement sur le
+              jujutsu. Sukuna déteste la pitié et la miséricorde, et voit la
+              souffrance comme une partie inévitable de la vie.
+            </p>
+          </div>
+    
+          <div id="tableau">
+            <h2>Pouvoirs</h2>
+            <table>
+              <tr>
+                <th>Nom du Pouvoir</th>
+                <th>Chapitre utilisé pour la première fois</th>
+                <th>Puissance</th>
+              </tr>
+              <tr>
+                <td>Démembrement</td>
+                <td>Chapter 8</td>
+                <td>élevé</td>
+              </tr>
+              <tr>
+                <td>Fente</td>
+                <td>Chapter 8</td>
+                <td>Élevé</td>
+              </tr>
+              <tr>
+                <td>Flamme Divine</td>
+                <td>Chapter 115</td>
+                <td>Très Élevé</td>
+              </tr>
+              <tr>
+                <td>Technique des Dix Ombres</td>
+                <td>Chapter 144</td>
+                <td>Extrêmement Élevé</td>
+              </tr>
+              <tr>
+                <td>Flash Noir</td>
+                <td>Chapter 58</td>
+                <td>Élevé</td>
+              </tr>
+              <tr>
+                <td>Expansion de Domain: Sanctuaire Malévolent</td>
+                <td>Chapter 137</td>
+                <td>Exceptionnel</td>
+              </tr>
+              <tr>
+                <td>Technique Maudite Inversée</td>
+                <td>Chapter 119</td>
+                <td>Effective</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="galerie">
+      <h2>Formes de Sukuna</h2>
+      <div class="gallery-item">
+        <figure>
+          <img
+            src="images/Sukuna_Chapter_117.webp"
+            alt="Forme Complète (Époque de Heian) - Sukuna avait deux visages et quatre bras, symbolisant sa puissance maximale."
+          />
+          <figcaption>
+            Forme Complète (Époque de Heian) - Sukuna avait deux visages et quatre bras, symbolisant sa puissance maximale.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="gallery-item">
+        <figure>
+          <img
+            src="images/sukunafingers.webp"
+            alt="Forme d'Esprit Maudit (20 doigts) - Sukuna existe sous la forme de 20 doigts momifiés, chacun contenant une partie de son âme et de son énergie maudite."
+          />
+          <figcaption>
+            Forme d'Esprit Maudit (20 doigts) - Sukuna existe sous la forme de 20 doigts momifiés, chacun contenant une partie de son âme et de son énergie maudite.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="gallery-item">
+        <figure>
+          <img
+            src="images/yozlhmengkw61.webp"
+            alt="Forme de Réceptacle (Yuji Itadori) - Sukuna contrôle le corps de Yuji et utilise ses techniques maudites, bien que limité par le nombre de doigts consommés."
+          />
+          <figcaption>
+            Forme de Réceptacle (Yuji Itadori) - Sukuna contrôle le corps de Yuji et utilise ses techniques maudites, bien que limité par le nombre de doigts consommés.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="gallery-item">
+        <figure>
+          <img
+            src="images/meguna-jjk-cosplay-help-v0-vy2iqe7vtmxc1.webp"
+            alt="Forme de Réceptacle (Megumi Fushiguro) - Sukuna combine sa puissance avec les techniques de shikigami de Megumi, rendant cette forme redoutable et unique."
+          />
+          <figcaption>
+            Forme de Réceptacle (Megumi Fushiguro) - Sukuna combine sa puissance avec les techniques de shikigami de Megumi, rendant cette forme redoutable et unique.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="gallery-item">
+        <figure>
+          <img
+            src="images/Sukuna_29.webp"
+            alt="Forme Complète (Époque moderne) - Sukuna fusionne avec Megumi pour compléter ses 20 doigts et devenir invincible."
+          />
+          <figcaption>
+            Forme Complète (Époque moderne) - Sukuna fusionne avec Megumi pour compléter ses 20 doigts et devenir invincible.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    
+      <div id="video">
+        <h1>Sukuna VS Gojo</h1>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/gDRhVEx1oQo?si=Vf1abYCvW6ba9De7"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Cette video nous montre comment sukuna et gojo était proche en terme
+          de puissance
+        </p>
+      </div>
+      <div id="pied">
+        <h3>
+          Collège de Maisonneuve: 3800 Sherbrooke St E, Montreal, Quebec H1X 2A2
+        </h3>
+        <h3>Liens important:</h3>
+        <a href="https://jujutsu-kaisen.fandom.com/wiki/Sukuna" target="_blank"
+          >https://jujutsu-kaisen.fandom.com/wiki/Sukuna</a
+        >
+        <a href="https://villains.fandom.com/wiki/Ryomen_Sukuna" target="_blank"
+          >https://villains.fandom.com/wiki/Ryomen_Sukuna</a
+        >
+        <div id="icon">
+          <ion-icon name="logo-discord"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-youtube"></ion-icon>
+        </div>
+        <h4>Avis de confidentialité | Privacy Notice</h4>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

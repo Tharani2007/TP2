@@ -1,0 +1,505 @@
+@font-face {
+  font-family: MangaFont;
+  src: url(fonts/mangat.ttf);
+}
+
+@font-face {
+  font-family: JjkFont;
+  src: url(fonts/Qetod.ttf);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/istockphoto-184601291-612x612.jpg);
+  background-size: 1250px;
+}
+
+nav {
+  margin-top: -69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav img {
+  max-height: 50px;
+  object-fit: contain;
+}
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: JjkFont;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ff5733;
+}
+
+#accueil {
+  font-family: MangaFont;
+  background-image: url(images/360_F_489152600_6wysbmzs4eCE71mkQoMPAUUbNoJ5qK18.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+#accueil h1 {
+  font-family: JjkFont;
+  font-size: 3em;
+}
+
+#accueil a{
+  color: aliceblue;
+}
+
+#accueil img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 1400px;
+  animation: slideIn 2s ease-out forwards;
+  opacity: 0;
+}
+
+#texteacc {
+  color: aliceblue;
+  height: 99.5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(119, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 4px solid black;
+}
+
+#galerie img {
+  width: 200px;
+}
+
+#inscription {
+  background-color: rgba(31, 31, 31, 0.8);
+  color: white;
+  font-family: JjkFont;
+  padding: 50px;
+  border: 4px solid #ff5733;
+  border-radius: 10px;
+  max-width: 800px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 50px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-position: center;
+}
+
+#inscription h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ff5733;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ff5733;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1em;
+  font-family: MangaFont;
+}
+
+input[type="submit"] {
+  font-family: MangaFont;
+  background-color: #ff5733;
+  color: white;
+  font-size: 1.2em;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff3a00;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #ff5733;
+}
+
+textarea {
+  resize: none;
+}
+
+#inscription p {
+  color: #ff5733;
+  font-size: 2.5em;
+}
+
+#inscription .clan-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+#inscription .clan-options input {
+  margin-right: 10px;
+}
+
+.sous-titre-inscription {
+  color: #ff5733;
+  font-size: 2.5em;
+}
+
+#articles {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#articles h2 {
+  font-size: 4em;
+  font-family: JjkFont;
+  color: #ff5733;
+  margin-bottom: 20px; 
+}
+
+
+#main-content {
+  margin-left: 25vh;
+  display: flex;
+  gap: 20px; 
+}
+
+
+#side-sections {
+  display: flex;
+  flex-direction: column; 
+  gap: 80px;
+  flex: 1; 
+}
+
+
+#sukunayap {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  border: 4px solid #ff5733;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+  background: linear-gradient(
+    145deg,
+    #2a2a2a,
+    #1e1e1e
+  );
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+#sukunayap img {
+  width: 100%;
+  max-width: 450px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#sukunayap p {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 500px;
+  color: aliceblue;
+  font-family: MangaFont;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(255, 87, 51, 0.8);
+}
+
+#sukunayap p strong {
+  color: #ff5733;
+  font-weight: bold; 
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
+#tableau {
+  border: 4px solid #ff5733;
+  width: 100vh;
+  background-color: #2a2a2a;
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  font-family: MangaFont;
+}
+
+#tableau table {
+  width: 100vh;
+  border-radius: 10px;
+}
+
+#tableau th,
+#tableau td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ff5733;
+}
+
+#tableau th {
+  background-color: #1e1e1e;
+  color: #ff5733;
+}
+
+#tableau td {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#apparence,
+#personnalite {
+  border: 4px solid #ff5733;
+  width: 100vh;
+  background-color: #2a2a2a;
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  font-family: MangaFont;
+}
+
+#apparence h2,
+#personnalite h2 {
+  color: #ff5733;
+  font-family: JjkFont;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#apparence p,
+#personnalite p {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(255, 87, 51, 0.8);
+}
+
+#apparence p strong,
+#personnalite p strong {
+  color: #ff5733;
+  font-weight: bold;
+  font-style: MangaFont;
+  text-decoration: underline;
+}
+
+#galerie {
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #1a1a1ab7;
+  border: 3px solid #ff5733;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+}
+
+#galerie h2 {
+  font-size: 3em;
+  font-family: JjkFont;
+  color: #ff5733;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.gallery-item {
+  width: calc(
+    33.33% - 20px
+  ); 
+  text-align: center;
+}
+
+.gallery-item figure {
+  margin: 0;
+}
+
+.gallery-item img {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #ff5733;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#galerie .gallery-item img:hover {
+  transform: scale(1.2);
+}
+
+.gallery-item figcaption {
+  margin-top: 10px;
+  color: aliceblue;
+  font-family: MangaFont;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(255, 87, 51, 0.8);
+}
+
+#video {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 3px solid #ff5733;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+#video h1 {
+  font-size: 2.5em;
+  font-family: JjkFont, sans-serif;
+  color: #ff5733;
+  margin-bottom: 20px;
+}
+
+#video iframe {
+  border-radius: 10px;
+  border: 4px solid #ff5733;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  width: 100%; 
+  max-width: 900px; 
+  height: 500px;
+}
+
+#video p {
+  color: aliceblue;
+  font-family: MangaFont, sans-serif;
+  font-size: 1.1em;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 4px rgba(255, 87, 51, 0.8);
+}
+
+#pied {
+  margin-top: 50px;
+  background-color: #2a2a2a; 
+  color: aliceblue; 
+  padding: 30px 20px;
+  text-align: center;
+  font-family: MangaFont, sans-serif;
+  border-top: 2px solid #ff5733; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#pied h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color:#ff5733
+}
+
+#pied a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 10px 0;
+  display: block;
+}
+
+#pied a:hover {
+  text-decoration: underline;
+  color: #ff5733;
+}
+
+#icon {
+  margin-top: 20px;
+}
+
+#icon ion-icon {
+  font-size: 2em;
+  color: #ff5733;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+#icon ion-icon:hover {
+  color: #ff5733; 
+}
+
+#pied h4 {
+  font-size: 1.2em;
+  color: aliceblue;
+  margin-top: 20px;
+  font-weight: normal;
+}
